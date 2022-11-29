@@ -1,4 +1,7 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
 import Nav from './components/Nav';
 
 function App() {
@@ -10,7 +13,19 @@ function App() {
   }
 console.log(amit())
   return (
-   <Nav/>
+    <>
+    <BrowserRouter>
+      <Routes>
+      <Route path='/' element={<Nav/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+
+      <Route path='/contact' element={<Contact/>}/>
+
+
+      </Routes>
+    </BrowserRouter>
+    </>
+  
   );
 }
 
