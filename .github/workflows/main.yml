@@ -30,7 +30,7 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          ftp-server: 
-          ftp-username: 
+          ftp-server: ftp.aghayo.com
+          ftp-username: deploy@aghayo.com
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/
