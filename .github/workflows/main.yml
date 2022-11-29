@@ -22,7 +22,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run react build script
-        run: npm i && npm build
+        run: npm && npm build
         env:
           CI: false
 
