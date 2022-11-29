@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav';
 
 function App() {
   function amit(){
@@ -10,9 +10,7 @@ function App() {
   }
 console.log(amit())
   return (
-    <div className="App">
-      <h1>hello my friends</h1>
-    </div>
+   <Nav/>
   );
 }
 
