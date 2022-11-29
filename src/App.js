@@ -11,7 +11,7 @@ function App() {
 console.log(amit())
   return (
     <div className="App">
-      hello my dear
+      <h1>hello my friends</h1>
     </div>
   );
 }
