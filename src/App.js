@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog';
+import Body from './components/Body';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 
@@ -16,7 +17,7 @@ console.log(amit())
     <>
     <BrowserRouter>
       <Routes>
-      <Route path='/' element={<Nav/>}/>
+      <Route path='/' element={[<Nav/>,<Body/>]}/>
       <Route path='/blog' element={<Blog/>}/>
 
       <Route path='/contact' element={<Contact/>}/>

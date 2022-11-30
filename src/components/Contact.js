@@ -10,7 +10,7 @@ export default function Contact() {
           <div className="card-body">
           <form>
   <div className="mb-3">
-    <label className="form-label">Name</label>
+    <label className="form-label">Sonu Babu</label>
     <input type="text" className="form-control" id="name" name='name'/>
   </div>
   <div className="mb-3">
