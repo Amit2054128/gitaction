@@ -16,10 +16,9 @@ console.log(amit())
   return (
     <>
     <BrowserRouter>
-      <Routes>
+      <Routes basename = "/">
       <Route path='/' element={[<Nav/>,<Body/>]}/>
       <Route path='/blog' element={<Blog/>}/>
-
       <Route path='/contact' element={<Contact/>}/>
 
 
