@@ -8,12 +8,7 @@ export default function Body() {
 
   return (
     <>
-        <div className="container">
-        <button className='btn btn-primary'> + </button>
-        <p>1</p>
-        <button className='btn btn-primary'> - </button>
-          
-        </div>
+       
     </>
   )
 }
