@@ -17,10 +17,10 @@ export default function Nav() {
           <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/blog">Blog</Link>
+          <Link className="nav-link" to="/blog"s>titri</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/contact">Contact</Link>
+          <Link className="nav-link" to="/contact">hello</Link>
         </li>
         
         <li className="nav-item dropdown">
