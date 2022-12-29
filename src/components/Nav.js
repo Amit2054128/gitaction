@@ -1,50 +1,79 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+
 
 
 export default function Nav() {
+  const [count, setCount] = useState(0);
   return (
     <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">Amit</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/blog"s>titri</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/contact">hello</Link>
-        </li>
-        
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Course
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">React</a></li>
-            <li><a className="dropdown-item" href="#">Laravel</a></li>
-            <li><a className="dropdown-item" href="#">Vue JS</a></li>
-            <li><a className="dropdown-item" href="#">Next JS</a></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
+
+      <form className="row g-3 needs-validation" noValidate>
+        <div className="col-md-4">
+          <label htmlFor="validationCustom01" className="form-label">First name</label>
+          <input type="text" className="form-control" id="validationCustom01" defaultValue="Mark" required />
+          <div className="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div className="col-md-4">
+          <label htmlFor="validationCustom02" className="form-label">Last name</label>
+          <input type="text" className="form-control" id="validationCustom02" defaultValue="Otto" required />
+          <div className="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div className="col-md-4">
+          <label htmlFor="validationCustomUsername" className="form-label">Username</label>
+          <div className="input-group has-validation">
+            <span className="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" className="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
+            <div className="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6">
+          <label htmlFor="validationCustom03" className="form-label">City</label>
+          <input type="text" className="form-control" id="validationCustom03" required />
+          <div className="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div className="col-md-3">
+          <label htmlFor="validationCustom04" className="form-label">State</label>
+          <select className="form-select" id="validationCustom04" required>
+            <option selected disabled value>Choose...</option>
+            <option>...</option>
+          </select>
+          <div className="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div className="col-md-3">
+          <label htmlFor="validationCustom05" className="form-label">Zip</label>
+          <input type="text" className="form-control" id="validationCustom05" required />
+          <div className="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div className="col-12">
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" defaultValue id="invalidCheck" required />
+            <label className="form-check-label" htmlFor="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div className="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div className="col-12">
+          <button className="btn btn-primary" type="submit">Submit form</button>
+        </div>
       </form>
-    </div>
-  </div>
-</nav>
+
+
+
     </>
   )
 }
