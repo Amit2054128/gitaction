@@ -23,6 +23,7 @@ export default function Blog() {
             <Avatar src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Nora_Fatehi_at_the_trailer_launch_of_Batla_House.jpg/200px-Nora_Fatehi_at_the_trailer_launch_of_Batla_House.jpg'
               sx={{ width: 100, height:100 }}
               alt ='noora fatehi'
+              
             />
             <Alert severity='success'>
               <AlertTitle>success</AlertTitle>
