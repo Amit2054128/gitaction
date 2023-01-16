@@ -20,7 +20,7 @@ export default function Blog() {
         />
           <Avatar
             sx={{ bgcolor:deepOrange[500] }} >A</Avatar>
-            <Avatar src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Nora_Fatehi_at_the_trailer_launch_of_Batla_House.jpg/200px-Nora_Fatehi_at_the_trailer_launch_of_Batla_House.jpg'
+            <Avatar src='https://st1.bollywoodlife.com/wp-content/uploads/2021/09/Nora-Fatehii.jpg'
               sx={{ width: 100, height:100 }}
               alt ='noora fatehi'
               
